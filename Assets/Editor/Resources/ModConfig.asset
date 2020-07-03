@@ -14,9 +14,10 @@ MonoBehaviour:
   id: siffron
   title: Siffron
   author: Piissii
-  description: "Siffron 1.0\nThe problem is how do you explain the words on button.\n\nMy
-    very first module! Hope you enjoy this module.\n\nModule ID: siffron\n\nCreated
-    by: Piissii\n\nManual available here: \nNot prepared yet!"
-  version: 1.0
+  description: "Siffron 1.2\nThe problem is how do you explain the words on button.\r\n\r\nThis
+    module has TP-Support.\r\n\r\nManual available here: https://ktane.timwi.de/HTML/Siffron.html\r\n\r\n\r\n\r\nModule
+    ID: siffron\r\nCreated by: Piissii\r\n\r\nMy very first module! Hope you enjoy
+    this module."
+  version: 1.2
   outputFolder: build
   previewImage: {fileID: 2800000, guid: 740bff21c26916041810c10dcbef6a9e, type: 3}

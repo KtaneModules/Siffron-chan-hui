@@ -39,7 +39,7 @@ public class siffronScript : MonoBehaviour {
 
 	private Boolean nowOnStrike = false;
 
-	public string TwitchHelpMessage = "Press top-left button with !{0} press TL or !{0} press 1. You can chain commands. e.g. !{0} press TL BR (numbers in reading order). ";
+	public string TwitchHelpMessage = "Press top-left button with !{0} press TL or !{0} press 1. Press '시퍼런' with !{0} press 시퍼런. You can chain commands. e.g. !{0} press TL BR (numbers in reading order). ";
 
 
 	//logging
@@ -328,17 +328,22 @@ public class siffronScript : MonoBehaviour {
 		if (cutInBlank[0] == "press")
 		{
 			for(int i=1;i<cutInBlank.Length;i++){
-				if(cutInBlank[i] == "TL" || cutInBlank[i] == "1"){
+				if(cutInBlank[i].Equals("TL", StringComparison.InvariantCultureIgnoreCase) || cutInBlank[i] == "1"){
 					whichToPress.Add(buttons[0]);
 				}
-				if(cutInBlank[i] == "TR" || cutInBlank[i] == "2"){
+				if(cutInBlank[i].Equals("TR", StringComparison.InvariantCultureIgnoreCase)  ||  cutInBlank[i] == "2"){
 					whichToPress.Add(buttons[1]);
 				}
-				if(cutInBlank[i] == "BL" || cutInBlank[i] == "3"){
+				if(cutInBlank[i].Equals("BL", StringComparison.InvariantCultureIgnoreCase)  ||  cutInBlank[i] == "3"){
 					whichToPress.Add(buttons[2]);
 				}
-				if(cutInBlank[i] == "BR" || cutInBlank[i] == "4"){
+				if(cutInBlank[i].Equals("BR", StringComparison.InvariantCultureIgnoreCase)  ||  cutInBlank[i] == "4"){
 					whichToPress.Add(buttons[3]);
+				}
+				for(int j=0;j<buttonStrings.Length;j++){
+					if(cutInBlank[i] == buttonStrings[j]){
+						whichToPress.Add(buttons[j]);
+					}
 				}
 			}
 			return whichToPress;

@@ -1159,8 +1159,9 @@ MonoBehaviour:
   - {r: 0, g: 0, b: 1, a: 1}
   - {r: 0.101960786, g: 0.101960786, b: 0.56078434, a: 1}
   - {r: 0.07058824, g: 0.14509805, b: 0.30980393, a: 1}
-  TwitchHelpMessage: 'Press top-left button with !{0} press TL or !{0} press 1. You
-    can chain commands. e.g. !{0} press TL BR (numbers in reading order). '
+  TwitchHelpMessage: "Press top-left button with !{0} press TL or !{0} press 1. Press
+    '\uC2DC\uD37C\uB7F0' with !{0} press \uC2DC\uD37C\uB7F0. You can chain commands.
+    e.g. !{0} press TL BR (numbers in reading order). "
 --- !u!114 &114353228950346700
 MonoBehaviour:
   m_ObjectHideFlags: 1
